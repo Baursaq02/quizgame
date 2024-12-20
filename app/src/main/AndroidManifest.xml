@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.quizgame">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light"
+        tools:targetApi="31">
+
+        <!-- Главная активность -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:label="Угадай страну"
+            android:theme="@style/Theme.Quizgame">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true"
+            android:label="Угадай страну"
+            android:theme="@style/Theme.Quizgame" />
+        <activity
+            android:name=".ResultsActivity"
+            android:exported="true"
+            android:label="Результаты"
+            android:theme="@style/Theme.Quizgame" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="Угадай страну"
+            android:theme="@style/Theme.Quizgame" />
+
+        <!-- Активность выбора уровней -->
+        <activity
+            android:name=".LevelSelectionActivity"
+            android:exported="true"
+            android:label="Выберите уровень"
+            android:theme="@style/Theme.Quizgame" />
+
+        <!-- Активность для уровня \"Угадать страну по флагу\" -->
+        <activity
+            android:name=".Level1FlagActivity"
+            android:exported="true"
+            android:label="Школьник - Флаги"
+            android:theme="@style/Theme.Quizgame" />
+        <activity
+            android:name=".Level2FlagActivity"
+            android:exported="true"
+            android:label="Студент - Флаги"
+            android:theme="@style/Theme.Quizgame" />
+        <activity
+            android:name=".Level3FlagActivity"
+            android:exported="true"
+            android:label="Учитель - Флаги"
+            android:theme="@style/Theme.Quizgame" />
+        <activity
+            android:name=".Level4FlagActivity"
+            android:exported="true"
+            android:label="Географ - Флаги"
+            android:theme="@style/Theme.Quizgame" />
+        <activity
+            android:name=".Level5FlagActivity"
+            android:exported="true"
+            android:label="Путешественник - Флаги"
+            android:theme="@style/Theme.Quizgame" />\
+        <activity
+            android:name=".Level6FlagActivity"
+            android:exported="true"
+            android:label="Инопланетянин - Флаги"
+            android:theme="@style/Theme.Quizgame" />
+
+        <!-- Активность для уровня \"Угадать страну по столице\" -->
+        <activity
+            android:name=".Level1CapitalActivity"
+            android:exported="true"
+            android:label="Школьник - Столицы"
+            android:theme="@style/Theme.Quizgame" />
+        <activity
+            android:name=".Level2CapitalActivity"
+            android:exported="true"
+            android:label="Студент - Столицы"
+            android:theme="@style/Theme.Quizgame" />
+        <activity
+            android:name=".Level3CapitalActivity"
+            android:exported="true"
+            android:label="Учитель - Столицы"
+            android:theme="@style/Theme.Quizgame" />
+        <activity
+            android:name=".Level4CapitalActivity"
+            android:exported="true"
+            android:label="Географ - Столицы"
+            android:theme="@style/Theme.Quizgame" />
+        <activity
+            android:name=".Level5CapitalActivity"
+            android:exported="true"
+            android:label="Путешественник - Столиыц"
+            android:theme="@style/Theme.Quizgame" />
+        <activity
+            android:name=".Level6CapitalActivity"
+            android:exported="true"
+            android:label="Инопланетянин - Столицы"
+            android:theme="@style/Theme.Quizgame" />
+
+    </application>
+
+</manifest>
